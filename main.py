@@ -416,10 +416,7 @@ def checkIfLoggedF():
     # Getting the user data;
     with open("./Data/userData.json", "r") as ud:
         userData = json.load(ud)
-    if userData["loggedIn"]:
-        return True
-    else:
-        return False
+    return userData["loggedIn"]
 
 
 
